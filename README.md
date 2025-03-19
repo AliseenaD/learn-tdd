@@ -48,7 +48,8 @@ should be placed in `tests/authorService.test.ts`.
 ## Part 2
 
 Briefly explain a limitation of the tests in `tests/authorSchema.test.ts` in the space below.
-
+- A limitation would be that it is tightly coupled with the query of the Author.count documents. If the getAuthorCount inner implementation 
+- was changed in any way, the tests will fail. It would be better if this was not as tightly coupled.
 
 
 ## Part 3
